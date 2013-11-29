@@ -20,7 +20,10 @@
             <column name="Jurusan" type="varchar(15)">
 				<constraints nullable="true"/>
 				</column>
-            <column name="Jenis_Kelamin" type="enum'P','L'">
+            <column name="Jenis_Kelamin" type="varchar(10)">
+				<constraints nullable="true"/>
+			</column>
+            <column name="Alamat" type="text">
 				<constraints nullable="true"/>
 			</column>
         </createTable>
