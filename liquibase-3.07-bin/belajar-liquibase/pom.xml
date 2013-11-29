@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog
+  xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd">
+		 
+	<changeSet id="101" author="farid">
+        <createTable tableName="table-datasiswa">
+            <column name="NIS" type="int">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="Nama" type="varchar(20)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="Kelas" type="varchar(10)">
+				<constraints nullable="true"/>
+			</column>
+            <column name="Jurusan" type="varchar(15)">
+				<constraints nullable="true"/>
+				</column>
+            <column name="Jenis_Kelamin" type="enum'P','L'">
+				<constraints nullable="true"/>
+			</column>
+        </createTable>
+    </changeSet>
+
+</databaseChangeLog>

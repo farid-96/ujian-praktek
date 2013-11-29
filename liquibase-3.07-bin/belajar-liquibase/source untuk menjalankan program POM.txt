@@ -1,0 +1,1 @@
+java -jar liquibase.jar --driver=com.mysql.jdbc.Driver --classpath=C:\liquibase-3.07-bin\mysql-connector-java-5.0.8.jar --changeLogFile=C:\liquibase-3.07-bin\belajar-liquibase\pom.xml --url="jdbc:mysql://localhost/belajar-liquibase" --username=root --password= update
